@@ -2,6 +2,7 @@
     <div class="container mt-5">
         <h1 class="text-center">Kiến thức sức khỏe cộng đồng</h1>
         <div class="row">
+            
             <div class="col-sm-4">
                 <div class="card">
                     <img :src="items[0].image" alt="Hình ảnh" />
@@ -36,11 +37,16 @@
     </div>
 </template>
 <script setup>
-// Import hình ảnh từ thư mục assets
+// Import hình ảnh từ thư mục assetsconst showPosts = ref (true);
+
+const togglePosts = () => {
+    showPosts.value = !showPosts.value;
+};
 import img1 from '../assets/rau-cu-qua.jpg';
 import img2 from '../assets/gia-vi.jpg';
 import img3 from '../assets/dau.jpg';
 const items = ([
+    
     {
         title: '8 loại rau củ quả giàu canxi', content: 'Canxi là khoáng chất cần thiết đối với cơ thể người. Có nhiều cách để bổ sung canxi, trong đó bổ sung qua đường ăn uống là cách tốt nhất. Có 8 loại rau củ giàu canxi...', image: img1
     },

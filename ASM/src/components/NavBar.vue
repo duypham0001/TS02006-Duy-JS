@@ -1,10 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
     <div class="container">
 
       <!-- LOGO -->
       <router-link class="navbar-brand fw-bold text-success" to="/home">
-        Energy Public
+      Vlog Assingment
       </router-link>
 
       <!-- TOGGLER -->
@@ -58,30 +58,59 @@ export default {
 
 
 
-<style scoped>  
-
-
-
-
-.logo {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
+<style scoped>
+/* NAVBAR BACKGROUND */
+.custom-navbar {
+  background: linear-gradient(135deg, #198754, #20c997);
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+/* LOGO */
+.navbar-brand {
+  color: #ffffff !important;
+  font-size: 22px;
+  letter-spacing: 0.5px;
 }
 
-.menu a {
-  color: #ddd;
-  text-decoration: none;
+/* MENU LINKS */
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
 }
 
-.menu a.router-link-active {
-  color: #fff;
+.nav-link:hover,
+.router-link-active {
+  color: #ffffff !important;
 }
 
+/* BUTTONS */
+.btn-success {
+  background: #ffffff;
+  color: #198754;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background: #e9f7f1;
+  color: #146c43;
+}
+
+.btn-outline-secondary {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+}
+
+.btn-outline-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* TOGGLER */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
 </style>

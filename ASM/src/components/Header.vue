@@ -10,7 +10,7 @@
 <style scoped>
 .blog-header {
   background: linear-gradient(135deg, #198754, #20c997);
-  color: #fff;
+  color: #ffffff;
   padding: 60px 0 50px;
   margin-top: 64px; /* chừa chỗ cho navbar fixed */
 }

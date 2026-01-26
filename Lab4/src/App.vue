@@ -1,5 +1,5 @@
 <script setup>
-import bai4 from './components/ontap.vue'
+import bai4 from './components/bai4.vue'
 </script>
 
 <template>

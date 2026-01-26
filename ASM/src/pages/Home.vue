@@ -1,7 +1,7 @@
 <template>
   <MainLayout>
     <div class="container py-5">
-      <h2 class="text-center mb-5">DESIGN FOR LIFE</h2>
+      <h2 class="text-center mb-5">                </h2>
 
       <div class="row">
         <!-- SIDEBAR -->
